@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Авторизация</title>
+    <meta name="author" content="Аверкиева В.В. | Выпускной проект продвинутого курса веб-разработки Loftschool">
+    <meta name="description" content="Авторизация">
+    <meta name="keywords" content="">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noarhive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/app.js" defer></script><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <section class="welcome">
+          <div class="welcome__bg-sky"></div>
+          <div class="parallax" id="js_parallax">
+            <div class="parallax__layer"><img class="parallax__mountains" id="js_parallax__mountains" src="./assets/img/stars.png"></div>
+            <div class="parallax__layer"><img class="parallax__mountains" id="js_parallax__mountains" src="./assets/img/mountains.png"></div>
+          </div>
+          <div class="button__autorization js-button__autorization">Авторизоваться</div>
+          <div class="welcome__container">
+            <div class="flip-card effect__click">
+              <div class="flip-card__front user hero__user">
+                <div class="user__pic"><img class="user__pic-img" src="./assets/img/user.jpg" alt=""></div>
+                <div class="welcome-user__description">
+                  <div class="welcome-user__name">Виктория Аверкиева</div>
+                  <div class="welcome-user__desc">Личный сайт веб разработчика</div>
+                </div>
+                <div class="welcome-socials__container">
+                                <ul class="socials__list">
+                                  <li class="socials__item"><a class="socials__link socials__link socials__link--vk" href="https://vk.com/id134335756" target="_blank">
+                                      <svg class="social__icon social_white">
+                                        <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                                      </svg></a></li>
+                                  <li class="socials__item"><a class="socials__link socials__link socials__link--github" href="https://github.com/AverkievaViktoria" target="_blank">
+                                      <svg class="social__icon social_white">
+                                        <use xlink:href="./assets/img/sprite.svg#github"></use>
+                                      </svg></a></li>
+                                  <li class="socials__item"><a class="socials__link socials__link socials__link--in" href="https://www.linkedin.com" target="_blank">
+                                      <svg class="social__icon social_white">
+                                        <use xlink:href="./assets/img/sprite.svg#in"></use>
+                                      </svg></a></li>
+                                </ul>
+                </div>
+                <nav class="welcome-footer">
+                  <ul class="welcome-menu">
+                    <li class="welcome-menu__item" style="width: 40%;"><a class="welcome-menu__link" href="./works.html">Мои работы</a></li>
+                    <li class="welcome-menu__item" style="width: 35%;"><a class="welcome-menu__link" href="./about.html">Обо мне</a></li>
+                    <li class="welcome-menu__item" style="width: 25%;"><a class="welcome-menu__link" href="./blog.html">Блог</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="flip-card__back user hero__user login">
+                <h1 class="login__header">Авторизуйтесь</h1>
+                <form class="login__form">
+                  <div class="login__form-container">
+                    <div class="login__form-label">
+                      <svg class="login__form-pic">
+                        <use xlink:href="./assets/img/sprite.svg#login"></use>
+                      </svg>
+                    </div>
+                    <input class="login__form-input" name="login" placeholder="Логин" type="text">
+                  </div>
+                  <div class="login__form-container">
+                    <div class="login__form-label">
+                      <svg class="login__form-pic">
+                        <use xlink:href="./assets/img/sprite.svg#password"></use>
+                      </svg>
+                    </div>
+                    <input class="login__form-input" name="pass" placeholder="Пароль" type="password">
+                  </div>
+                  <div class="login__form-container--checks">
+                    <input class="login__checkbox login__is-human" type="checkbox" name="is_human" id="is_human">
+                    <label class="login-form__label" for="is_human">Я человек</label>
+                    <p class="login-form__question">Вы точно не робот?</p>
+                    <div class="login__group">
+                      <input class="input input_radio" id="yes_js_man_sure" name="js_man_sure" type="radio" value="yes">
+                      <label class="input__radio-label" for="yes_js_man_sure">Да</label>
+                      <input class="input input_radio" id="no_js_man_sure" name="js_man_sure" type="radio" value="no">
+                      <label class="input__radio-label" for="no_js_man_sure">Не уверен</label>
+                    </div>
+                  </div>
+                </form>
+                <nav class="welcome-footer">
+                  <ul class="welcome-menu">
+                    <li class="welcome-menu__item esc" style="width: 50%;"><a class="welcome-menu__link" href="#">На главную</a></li>
+                    <li class="welcome-menu__item enter" style="width: 50%;"><a class="welcome-menu__link" href="#">Войти</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer footer__welcome">
+        <div class="footer__welcome_text text-white">© Виктория Аверкиева | Создано с любовью в LoftSchool | 2017</div>
+      </footer>
+      <div class="preloader">
+        <div class="preloader__spinner">
+          <div class="preloader__animation"></div>
+          <div class="preloader__percents">0%</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

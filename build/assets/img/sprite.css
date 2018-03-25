@@ -1,0 +1,126 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-fav_night {
+  background-image: url(sprite.png);
+  background-position: -3868px -1385px;
+  width: 256px;
+  height: 256px;
+}
+.icon-header-fone {
+  background-image: url(sprite.png);
+  background-position: 0px -1385px;
+  width: 1800px;
+  height: 900px;
+}
+.icon-mountains {
+  background-image: url(sprite.png);
+  background-position: -2078px 0px;
+  width: 2078px;
+  height: 1385px;
+}
+.icon-stars {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 2078px;
+  height: 1385px;
+}
+.icon-work-1-lt {
+  background-image: url(sprite.png);
+  background-position: -2700px -2047px;
+  width: 300px;
+  height: 226px;
+}
+.icon-work-1 {
+  background-image: url(sprite.png);
+  background-position: -2317px -1385px;
+  width: 517px;
+  height: 662px;
+}
+.icon-work-2-lt {
+  background-image: url(sprite.png);
+  background-position: -2100px -2047px;
+  width: 300px;
+  height: 226px;
+}
+.icon-work-2 {
+  background-image: url(sprite.png);
+  background-position: -3351px -1385px;
+  width: 517px;
+  height: 662px;
+}
+.icon-work-3-lt {
+  background-image: url(sprite.png);
+  background-position: -1800px -2047px;
+  width: 300px;
+  height: 226px;
+}
+.icon-work-3 {
+  background-image: url(sprite.png);
+  background-position: -2834px -1385px;
+  width: 517px;
+  height: 662px;
+}
+.icon-work-4-lt {
+  background-image: url(sprite.png);
+  background-position: -2400px -2047px;
+  width: 300px;
+  height: 226px;
+}
+.icon-work-4 {
+  background-image: url(sprite.png);
+  background-position: -1800px -1385px;
+  width: 517px;
+  height: 662px;
+}
+.icon-works-1 {
+  background-image: url(sprite.png);
+  background-position: 0px -2285px;
+  width: 496px;
+  height: 321px;
+}
+.icon-works-2 {
+  background-image: url(sprite.png);
+  background-position: -496px -2285px;
+  width: 496px;
+  height: 321px;
+}
+.icon-works-3 {
+  background-image: url(sprite.png);
+  background-position: -992px -2285px;
+  width: 496px;
+  height: 321px;
+}
+.icon-works-4 {
+  background-image: url(sprite.png);
+  background-position: -1488px -2285px;
+  width: 496px;
+  height: 321px;
+}
+.icon-works-down {
+  background-image: url(sprite.png);
+  background-position: -3000px -2047px;
+  width: 300px;
+  height: 226px;
+}
+.icon-works-up {
+  background-image: url(sprite.png);
+  background-position: -3300px -2047px;
+  width: 301px;
+  height: 225px;
+}

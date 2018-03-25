@@ -1,0 +1,66 @@
+//--- Colors ---//
+$white: #fff;
+$beige: #f6f6f6;
+$black: #000;
+$red: #e44845;
+$blue: #0548be;
+$dark-blue: #083c96;
+$blue-hover: #083c96;
+
+$gray: #474b57;
+$grey: #474b57;
+$light-gray: #9e9fa4;
+$light-grey: #9e9fa4;
+
+
+$main-font-color: #373e42;
+
+$social-header-color: $white;
+$social-footer-color: #9e9fa4;
+$social-hover-color: #004cd1;
+
+$vertical-line-color: #63656d;
+$gorizont-line-color: $gray;
+
+$main-font-color: #373e42;
+$title-color: $gray;
+
+$welcome-container-color: rgb(28, 31, 41);
+
+$footer-top-color: #3c3f48;
+$footer-bottom-color: #2b58a4;
+
+$text-color: rgb(71, 75, 87);
+$titles-color: $gray;
+
+$acsent-text-color: #0548be;
+$link-color: #0548be;
+// hover - убирать подчеркивание
+
+//--- Fonts ---//
+$main-font-family: "Roboto", Arial, sans-serif;
+$acsent-font-family: "Roboto Medium", Arial, sans-serif;
+$header-font-family: Sansus;
+$subheader-font-family: Sansus;
+
+//--- Font size ---//
+$header-font-size: 63px;
+$subheader-font-size: 35px;
+$text-size: 16px;
+
+//--- Size ---//
+
+// акценты и ссылки Roboto Medium
+// текст 16px Roboto Regular
+// Sansus Regular 35px fff
+
+
+
+//--- Text colors ---//
+.text-white {
+	color: $white;
+}
+.text-black {
+	color: $black;
+}
+

@@ -1,0 +1,108 @@
+﻿//! footer
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  @include iphone() {
+    text-align: center;
+    justify-content: center;
+  }
+
+}
+.menu__link {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: rem(15.77px);
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .3s;
+  position: relative;
+  word-wrap: normal;
+  display: block;
+  white-space: nowrap;
+  outline: none;
+  &:hover,&:focus {
+    color: #004cd1;
+  }
+}
+.menu__item {
+  margin-left: 40px;
+
+  @include laptop() {
+    margin-left: 30px;
+  }
+  @include ipad() {
+    margin-left: 30px;
+  }
+  @include iphone() {
+    margin-left: 11px;
+  }
+}
+.menu__item:first-child {
+  margin-left: 0;
+}
+.menu_login-face {
+  justify-content: space-between;
+}
+.menu_login-face .menu__item {
+  margin: 0;
+}
+.menu_login-face .menu__link {
+  position: relative;
+  transition: .3s;
+  padding: 14px 31px;
+  background-color: rgba(0, 76, 209, .85);
+  &:hover,&:active,&:focus {
+    background-color: rgba(4, 62, 163, .85);
+    color: #fff;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background-color: rgba(222,227,231,.5);
+  }
+}
+.menu_login-face .menu__item:last-child .menu__link::after {
+  display: none;
+}
+.menu_login-back {
+  justify-content: flex-start;
+  width: 100%;
+}
+.menu_login-back .menu__item {
+  margin: 0;
+  flex: 1;
+  display: flex;
+}
+.menu_login-back .menu__link {
+  position: relative;
+  transition: .3s;
+  padding: 14px 31px;
+  background-color: rgba(0, 76, 209, .85);
+  text-align: center;
+  flex: 1;
+  &:hover,&:active,&:focus {
+    background-color: rgba(4, 62, 163, .85);
+    color: #fff;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background-color: rgba(222,227,231,.5);
+  }
+}
+.menu_login-back .menu__item:last-child .menu__link::after {
+  display: none;
+}

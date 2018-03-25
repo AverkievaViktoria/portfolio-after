@@ -1,0 +1,26 @@
+.blog {
+  position: relative;
+  @extend %clearfix;
+}
+.blog-row {
+  margin-top: 10px;
+  padding: 20px 10px;
+}
+	.blog__menu-sidebar {
+	  width: 30%;
+		float: left;
+	  text-align: right;
+	  font-size: 16px;
+	  font-family: "Roboto";
+	  @include ipad {
+	    display: none;
+	  }
+	}
+	.blog__content {
+	  width:70%;
+		float: right;
+	  //padding: 5px 40px 0px 35px;
+	  @include ipad {
+	    width:100%;
+	  }
+	}

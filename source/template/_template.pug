@@ -1,0 +1,39 @@
+block variables
+
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title #{title}
+    //- SEO
+    meta(name="author" content="Аверкиева В.В. | Выпускной проект продвинутого курса веб-разработки Loftschool")
+    meta(name="description" content=description)
+    meta(name="keywords" content="")
+    meta(name="robots" content="noindex, nofollow")
+    meta(name="googlebot" content="noarhive")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(content="ie=edge" http-equiv="x-ua-compatible")
+
+    //- favicon block start
+     include source/images/fav_night.png
+    //- favicon block end
+
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+
+    link(rel='stylesheet' href='assets/css/foundation.css')
+    link(rel='stylesheet' href='assets/css/app.css')
+    script(src='assets/js/foundation.js' defer)
+    script(src='assets/js/app.js' defer)
+
+    <!--[if lt IE 9]>
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+    <![endif]-->
+
+  body
+    .wrapper
+      block content
+        block header
+        block main
+      block footer
+      
+      

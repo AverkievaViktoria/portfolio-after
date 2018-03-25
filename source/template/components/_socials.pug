@@ -1,0 +1,14 @@
+mixin social(mod)
+  - mod = ' ' + mod || ''
+  -
+    var socials = [
+    { item: 'vk',     link: 'https://vk.com/id134335756'},
+    { item: 'github', link: 'https://github.com/AverkievaViktoria'},
+    { item: 'in',     link: 'https://www.linkedin.com'}
+    ]
+  ul.socials__list
+    each social in socials
+      li.socials__item
+        a.socials__link(href=`${social.link}` class=`socials__link socials__link--${social.item}` target="_blank")
+          svg(class=("social__icon") + mod)
+            use(xlink:href=`./assets/img/sprite.svg#${social.item}`)

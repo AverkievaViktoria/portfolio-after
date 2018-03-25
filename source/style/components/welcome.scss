@@ -1,0 +1,433 @@
+//! кнопка авторизации наверху
+.button__autorization {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  width: 180px;
+  height: 45px;
+  padding-top: 9px;
+  color: $white;
+  border: 1px solid $white;
+  font-family: "Roboto";
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    border-color: $blue;
+    background-color: $blue-hover;
+  }
+  @include iphone {
+    @include centered(x);
+  }
+}
+
+.welcome {
+  overflow: hidden;
+}
+.welcome__bg-sky {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  @include centered();
+  overflow: hidden;
+  background-color: #223b65;  
+}
+
+.welcome__bg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  @include centered();
+  overflow: hidden;
+  background-image: url("/assets/img/hero.jpg");
+  background-size: cover;
+  background-position: center;  
+}
+
+.welcome__container {
+  position: absolute;
+  @include centered();
+  width: 380px;
+  height: 405px;
+  overflow: hidden;
+  background-color: $welcome-container-color;
+  opacity: 0.7;
+}
+
+.welcome__footer {
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -95%);
+  color: #fff;
+  font-size: 16px;
+}
+
+
+.welcome-user__description{
+  font-family: "Roboto";
+  font-size: 16px;
+  color: #fff;
+  width: 380px;
+}
+.welcome-user__name {
+  font-size: 28px;
+}
+.welcome-user__desc {
+  font-size: 16px;
+}
+.welcome-socials__container {
+  margin: 26px 0;
+}
+.welcome-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.welcome-menu {
+  @extend %clearfix;
+  width: 381px;
+}
+
+.menu__icon {
+  padding-right: 20px; 
+}
+.welcome-menu__item {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  background-color: #0649be;
+  border-right: 2px solid $white;
+  padding: 0 10px;
+  &:last-child {
+    border-right: none;
+  }
+  &:hover {
+    background: rgb(4, 60, 150);
+  }
+}
+.menu__link {
+  color: $white;
+  &:hover {
+    color: $blue;
+  }
+}
+.welcome-menu__link{
+  display: block;
+  padding: 10px 10px;
+  text-align: center;
+  background-color: #0649be;
+  font-size: 16px;
+  font-family: "Roboto";
+  text-decoration: none;
+  color: #fff;
+  &:hover {
+    background: rgb(4, 60, 150);
+  }
+
+}
+
+// авторизация
+.login__form-container {
+  height: 45px;
+  margin: 0px 20px 20px 20px;
+}
+.login__form-container--checks {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.login__checkbox {
+  width: 20px;
+  height: 20px;
+  &:checked {
+    content: "\f00c";
+    background: $blue;
+    border-color: $blue;
+  }
+}
+.login-form__label {
+  position: relative;
+  top: -5px;
+  font-size: 16px;
+}
+.login-form__question {
+  position: relative;
+  font-size: 16px;
+  margin: 10px 0;
+}
+.login {
+  color: $white;
+  &__header {
+    font-size: 28px;
+    font-family: "Roboto";
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+  }
+
+  &__form {
+
+    &-label{
+      display: block;
+      content: "";
+      height: 45px;
+      width: 45px;
+      left: 20px;
+      background: #eee;
+      margin: 0;
+      position: absolute;
+      padding: 13px 13px 13px 15px;
+    }
+    &-input {
+      padding-left: 63px;
+      width: 340px;
+      height: 45px;
+      margin-rigth: 45px;
+      border: 0;
+      color: $white;
+      font-family: "Roboto";
+      font-size: 16px;
+      transition: .5s all;
+      outline: 0;
+
+    }
+    &-pic {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      fill: $black;
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+.login__group {
+  position: relative;
+  text-align: center;
+  margin: 0px 10px 32px 10px;
+}
+.login__input-wrapper {
+  position: absolute;
+}
+.form__input-wrapper--radio {
+  display: inline-block;
+  width: 50%;
+  float: left;
+}
+
+.radio-yes {
+  left: 20px;
+}
+.radio-no {
+  left: 130px;
+}
+.form__label {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.form__radio {
+  display: none;
+}
+.form__radio + .form__label:before {
+  border-radius: 50px;
+}
+.form__radio:checked + .form__label:before {
+  content: "";
+  background: #fff;
+  border-color: #cccccc;
+}
+.form__radio:checked + .form__label:after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  height: 8px;
+  width: 8px;
+  background-color: $blue;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.form__label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background: white;
+  font-size: inherit;
+  text-rendering: auto;
+}
+
+
+.input {
+  background-color: #fff;
+  padding: rem(16px) rem(20px);
+  color: rgba(55,62,66,.5);
+  font-weight: 400;
+  width: rem(295px);
+  height: rem(48px);
+  border: none;
+  &::placeholder {
+    color: rgba(55,62,66,.5);
+    font-weight: 400;
+  }
+}
+.input_radio {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  opacity: 0;
+  + .input__radio-label {
+    color: rgba(255,255,255,.8);
+    margin-left: 40px;
+    font-weight: 400;
+    &:first-child {
+      margin-left: 0px;
+    }
+    &:before {
+      content: '';
+      background: #fff;
+      border-radius: 100%;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      top: 0;
+      right: 25px;
+      margin-right: -11px;
+      vertical-align: top;
+      cursor: pointer;
+      text-align: center;
+      transition: all 250ms ease;
+    }
+  }
+  &:checked {
+    + .input__radio-label {
+      &:before {
+        background-color: #0548be;
+        box-shadow: inset 0 0 0 5px #fff;
+      }
+    }
+  }
+  &:focus {
+    + .input__radio-label {
+      &:before {
+        outline: none;
+      }
+    }
+  }
+  &:disabled {
+    + .input__radio-label {
+      &:before {
+        box-shadow: inset 0 0 0 5px #fff;
+        border-color: darken(#fff, 25%);
+        background: darken(#fff, 25%);
+      }
+    }
+  }
+  + .input__radio-label {
+    &:empty {
+      &:before {
+        margin-right: 0;
+      }
+    }
+  }
+}
+.input_password {
+  padding-left: rem(68px);
+}
+.input_login {
+  padding-left: rem(68px);
+}
+.input_checkbox {
+  width: 1px;
+  height: 1px;
+  position: relative;
+  margin-left: rem(14px);
+}
+.input__checkbox-check {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #0548be;
+  background: linear-gradient(to bottom, #0548be 0%,#0146bc 40%,#0045bc 100%);
+  border-radius: 4px;
+  box-shadow: inset 0px 1px 1px #0548be, 0px 1px 3px rgba(5,72,190,.5);
+  &:after {
+    content: '';
+    width: 9px;
+    height: 5px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border: 3px solid #fff;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    transform: rotate(-45deg);
+  }
+  &:hover::after {
+    opacity: 0.5;
+  }
+}
+.input_checkbox {
+  visibility: hidden;
+  &:checked + .input__checkbox-check:after {
+    opacity: 1;
+  }
+}
+.input__icon-label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f0efe9;
+  height: rem(48px);
+  width: rem(48px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input__icon {
+  width: rem(18px);
+  height: rem(18px);
+  fill: #c4cbcd;
+}
+.input__container {
+  position: relative;
+  margin-bottom: rem(20px);
+}
+.input__container:last-child {
+  margin-bottom: 0;
+}
+
+.login__form .input__container:nth-child(3) {
+  margin-bottom: rem(10px);
+}
+.input__checkbox-label {
+  margin-left: rem(14px);
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  color: rgba(255,255,255,.8);
+}

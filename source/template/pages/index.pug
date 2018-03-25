@@ -1,0 +1,31 @@
+extends ../_template
+
+include ../sections/_footer
+
+block variables
+  - var title = 'Авторизация'
+  - var description = 'Авторизация'
+
+block content
+  .content
+    section.welcome
+      .welcome__bg-sky
+      #js_parallax.parallax
+        .parallax__layer
+          img.parallax__mountains#js_parallax__mountains(src="./assets/img/stars.png")
+        .parallax__layer
+          img.parallax__mountains#js_parallax__mountains(src="./assets/img/mountains.png")
+
+      .button__autorization.js-button__autorization Авторизоваться
+      
+      .welcome__container
+        .flip-card.effect__click
+          include ../sections/welcome-front
+          include ../sections/welcome-back   
+  
+
+block footer
+  +footer('welcome')
+
+  include ../sections/preloader
+

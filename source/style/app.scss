@@ -1,0 +1,12 @@
+﻿// Fonts
+@import "fonts/_font-awesome";
+@import "fonts/_font-roboto";
+@import "fonts/_font-sansus";
+
+// Config (важен порядок подключения!)
+@import "config/_variables";
+@import "config/_mixins";
+@import "config/_global";
+
+// Components (не важен порядок подключения!)
+@import "components/**/*";

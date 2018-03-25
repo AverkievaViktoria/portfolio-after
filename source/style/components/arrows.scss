@@ -1,0 +1,82 @@
+﻿// стрелки для header
+.arrow {
+  width: 26px;
+  height: 16px;
+}
+
+.arrow__pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: $beige;
+  opacity: .7;
+  transition: .3s;
+  cursor: pointer;
+  &:hover,&:focus,&:active { 
+  	fill: $white;
+  }
+}
+
+
+
+// стрелка для works вверх
+.arrow-box {
+  position: relative;
+  text-align: center;
+  &__link {
+    cursor: pointer;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__up {
+    height: 16px;
+    width: 26px;
+    fill:$white;
+    transform: rotate(180deg);
+    position: relative;
+    top:0;
+    transition: top .4s ease-in-out;
+    &:hover {
+    	top: -15px;
+    }
+  }
+}
+
+
+// стрелки для слайдера
+.slider__arrow {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($beige,0.7);
+  z-index: 1;
+}		
+
+.slider__arrow_down {
+	background-color: rgba(241, 237, 225, 0.4);
+	&:hover {
+		.slider__arrow-pic {
+			top: 70%;
+		}
+	}
+}
+		
+.slider__arrow_up {
+	background-color: rgba(227, 222, 208, 0.4);
+	transform: rotate(180deg);
+	&:hover {
+		.slider__arrow-pic {
+			top: 70%;
+		}
+	}
+}		
+		
+.slider__arrow-pic {
+	height: 30px;
+	@include centered();
+	fill: $white;
+	transition: top .6s ease-in-out;
+}  

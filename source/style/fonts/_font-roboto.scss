@@ -1,0 +1,83 @@
+/* ROBOTO FONT */
+
+$roboto-font-path: "../fonts/Roboto/";
+
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Light), url('#{$roboto-font-path}Roboto-Light.eot');
+    src: url("#{$roboto-font-path}Roboto-Light.eot?#iefix") format('embedded-opentype'),
+        url("#{$roboto-font-path}Roboto-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Regular), url('#{$roboto-font-path}Roboto-Regular.eot');
+    src: url("#{$roboto-font-path}Roboto-Regular.eot?#iefix") format('embedded-opentype'),
+        url("#{$roboto-font-path}Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('#{$roboto-font-path}Roboto-Medium.eot');
+    src: url("#{$roboto-font-path}Roboto-Medium.eot?#iefix") format('embedded-opentype'),
+        url("#{$roboto-font-path}Roboto-Medium.woff") format("woff"),
+        url("#{$roboto-font-path}Roboto-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('#{$roboto-font-path}Roboto-Bold.eot');
+    src: url("#{$roboto-font-path}Roboto-Bold.eot?#iefix") format('embedded-opentype'),
+        url("#{$roboto-font-path}Roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@mixin roboto() {
+    font-family: 'Roboto', serif;
+}
+
+/*
+//@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@font-face {
+	font-family: Roboto;
+	src: local(Roboto Roboto-Bold), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+	src: local(Roboto Roboto-BoldItalic), url("../fonts/roboto/Roboto-BoldItalic.ttf") format("truetype");
+	src: local(Roboto Roboto-Italic), url("../fonts/roboto/Roboto-Italic.ttf") format("truetype");
+	src: local(Roboto Light), url("../fonts/roboto/Roboto-Light.ttf") format("truetype");
+	src: local(Roboto LightItalic), url("../fonts/roboto/Roboto-LightItalic.ttf") format("truetype");
+	src: local(Roboto Roboto-Medium), url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+	src: local(Roboto Roboto-MediumItalic), url("../fonts/roboto/Roboto-MediumItalic.ttf") format("truetype");
+	src: local(Roboto Regular), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: FontAwesome;
+	src: url(../fonts/FontAwesome.otf) format('otf'),
+	url(../fonts/fontawesome-webfont.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Sansus-Webissimo-Regular;
+	src: url(../fonts/Sansus-Webissimo-Regular.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// нет в ДЗ:
+@font-face {
+	font-family: 'bernier';
+	src: url('../fonts/bernierregular-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin bernier() {
+	font-family: 'bernier', serif;
+}*/

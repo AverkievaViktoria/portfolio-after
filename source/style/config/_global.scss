@@ -1,0 +1,152 @@
+* {
+	box-sizing: border-box;
+}
+
+
+// прижать футер
+body {
+	padding: 0;
+	margin: 0;
+}
+.wrapper {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+	.content {
+		flex: 1 0 auto;
+	}
+	.footer {
+		flex: 0 0 auto;
+	}
+
+
+
+html, body {
+	width: 100%;
+}
+body {
+	font-family: Roboto, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 14px;
+	line-height: 1.42;
+}
+html {
+	font-size: 14px;
+	@include ipad {
+		font-size: 14px;
+	}
+	@include iphone {
+		font-size: 12px;
+	}
+}
+
+body, html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+	font-family: $main-font-family;
+	font-size: 14px;
+	line-height: 1.42;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+ul {
+	padding: 0;
+	margin: 0;
+	li{
+		list-style: none;
+	}
+}
+p {
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+
+
+// --- Common elements --- //
+.section {
+	position: relative;
+	height: 100vh;
+}
+
+.block-title {
+  position: relative;
+  display: inline-block;
+  font-family: "Sansus";
+  font-size: 63px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.block-subtitle {
+	position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  font-family: "Sansus";
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+  &:after {
+  	content: "";
+  	display: block;
+  	height: 3px;
+	  width: 90px;
+	  bottom: 0;
+	  @include centered(x);
+  }
+  &_white {
+  	color: $white;
+	  &:after {
+	  	background-color: $white;
+	  }
+	}
+  &_gray {
+  	color: $gray;
+	  &:after {
+	  	background-color: $gray;
+	  }
+	}
+}
+//.block-subtitle.block-subtitle_gray 
+//.block-subtitle.block-subtitle_white 
+
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-justify {
+	text-align: justify;
+}
+.text-content {
+	font-size: 16px;
+	font-family: "Roboto";
+	line-height: 1.5;
+	color: rgb(71, 75, 87);
+	text-align: left;
+}
+.p {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: $text-color;
+  line-height: 1.5;
+  text-align: left;
+}	
+// --- Common elements --- //
+
+
+
+

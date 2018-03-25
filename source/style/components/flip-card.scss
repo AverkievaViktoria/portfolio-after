@@ -1,0 +1,36 @@
+﻿// flip замена
+.flip-card {
+  position: relative !important;
+  @include centered(y);
+  margin-left: 25%;
+  margin-rigth: auto;
+  width: 50%;
+}
+
+.flip-card__front,
+.flip-card__back {
+  position: absolute;
+}
+
+.flip-card__front,
+.flip-card__back {
+  backface-visibility: hidden;
+  //transition: transform 0.3s;
+  transition: all 1s ease-in-out;
+}
+
+.flip-card__front {
+  //display: none;
+}
+.flip-card__back {
+  display: none;
+  transform: rotateY(-180deg);
+}
+.flip-card.effect__click.flipped .card__front {
+  transform: rotateY(-180deg);
+}
+.flip-card.effect__click.flipped .card__back {
+  transform: rotateY(0);
+}
+
+

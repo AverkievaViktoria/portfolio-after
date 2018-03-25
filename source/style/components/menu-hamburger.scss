@@ -1,0 +1,135 @@
+﻿.menu-hamburger {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $blue;
+  opacity: 0.95;
+  z-index: 10;
+  /*&::before {
+    content: "";
+    background-color: rgba(24,54,105,.87);
+    height: 100vh;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    left: -50%;
+    z-index: 31;
+  }
+  &::after {
+    content: "";
+    background-color: rgba(24,54,105,.87);
+    height: 100vh;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: -50;
+    z-index: 31;
+  }*/
+}
+/*
+.menu-hamburger_left {
+  &::before {
+    animation: menu-hamburger_left 1s;
+    animation-fill-mode: forwards;
+  }
+}
+@keyframes menu-hamburger_left {
+  from {
+    opacity: 0;
+    left: -50%
+  }
+  to {
+    opacity: .87;
+    left: 0;
+  }
+}
+.menu-hamburger_right {
+  &::after {
+    animation: menu-hamburger_right 1s;
+    animation-fill-mode: forwards;
+  }
+}
+@keyframes menu-hamburger_right {
+  from {
+    opacity: 0;
+    right: -50%
+  }
+  to {
+    opacity: .87;
+    right: 0;
+  }
+}
+.menu-hamburger_right-hide {
+  &::after,
+  .menu-hamburger__link
+  {
+    animation: menu-hamburger_right-hide 1s;
+    animation-fill-mode: forwards;
+  }
+}
+.menu-hamburger_left-hide {
+  &::before
+  {
+    animation: menu-hamburger_left-hide 1s;
+    animation-fill-mode: forwards;
+  }
+}
+@keyframes menu-hamburger_right-hide {
+  from {
+    opacity: .87;
+    right: 0;
+  }
+  to {
+    opacity: 0;
+    right: 0;
+  }
+}
+@keyframes menu-hamburger_left-hide {
+  from {
+    opacity: .87;
+    left: 0;
+  }
+  to {
+    opacity: 0;
+    left: 0;
+  }
+}*/
+
+
+.menu-hamburger__list {
+  
+}
+.menu-hamburger__item {
+  margin-bottom: 70px;
+  width: 100%;
+}
+.menu-hamburger__link {
+  text-decoration: none;
+  font-family: "Sansus Webissimo", Arial, sans-serif;
+  font-size: 63px;
+  color: #fff;
+  display: block;
+  position: relative;
+  z-index: 320;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  opacity: 1;//0;
+
+  &:hover::after, &_active::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -30px;
+    background-color: #fff;
+    width: 89px;
+    height: 3px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

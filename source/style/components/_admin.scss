@@ -1,0 +1,28 @@
+.wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+}
+
+.form__groups {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form__group {
+  margin-left: 10px;
+  &:first-child {
+    margin-left: 0;
+  }
+}

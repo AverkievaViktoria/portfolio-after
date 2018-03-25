@@ -1,0 +1,5 @@
+mixin contact(items)
+  ul(class="contact")
+    each item in items
+      li.contact__item
+        a.contact__link(href="/" + item.url) #{item.text}

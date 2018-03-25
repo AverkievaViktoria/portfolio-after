@@ -1,0 +1,17 @@
+/* SANSUS FONT */
+
+$sansus-font-path: "../fonts/Sansus/";
+
+@font-face {
+  font-family: 'Sansus';
+  src: url('#{$sansus-font-path}SansusWebissimo.eot?#iefix') format('embedded-opentype'),
+  url('#{$sansus-font-path}SansusWebissimo.woff') format('woff'),
+  url('#{$sansus-font-path}SansusWebissimo.ttf')  format('truetype'),
+  url('#{$sansus-font-path}SansusWebissimo.svg#SansusWebissimo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin sansus() {
+  font-family: 'Sansus', serif;
+}

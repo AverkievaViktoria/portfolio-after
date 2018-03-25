@@ -1,0 +1,33 @@
+﻿mixin header (blog)
+  block top-menu
+    include ../sections/menu-hamburger
+    include ../sections/hamburger
+    include ../sections/socials
+
+  section(class=(blog ? "section__blog hero" : "section hero"))
+    .hero__container.scroll-parallax
+      .scroll-parallax__container
+        .scroll-parallax__layer
+          img(src="./assets/img/header-fone.png").scroll-parallax__image
+      //.scroll-parallax
+        .scroll-parallax__container
+          .scroll-parallax__layer
+            img(src="./assets/img/header-fone.png").scroll-parallax__image
+
+      
+        
+
+      .arrow.hero__scroll-button.scroll-parallax__arrow
+        svg.arrow__pic
+          use(xlink:href="./assets/img/sprite.svg#arrow-down")
+      .hero__title.scroll-parallax__hero
+        img(src="./assets/img/stars1.svg" alt="stars").hero__title-pic
+        if !blog  
+          include ../sections/user
+        else
+          .user.hero__user
+            .hero__pic
+              img(src="./assets/img/user.jpg", alt="").user__pic-img
+            .user__description
+              .hero__name Блог
+              .hero__desc Статьи, которые я написала	

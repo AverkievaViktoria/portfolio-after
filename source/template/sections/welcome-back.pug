@@ -1,0 +1,37 @@
+﻿.flip-card__back.user.hero__user.login
+	h1.login__header Авторизуйтесь
+	form.login__form
+
+		.login__form-container
+			.login__form-label
+				svg.login__form-pic
+					use(xlink:href="./assets/img/sprite.svg#login")
+			input.login__form-input(name="login" placeholder="Логин" type="text")
+
+		.login__form-container
+			.login__form-label
+				svg.login__form-pic
+					use(xlink:href="./assets/img/sprite.svg#password")
+			input.login__form-input(name="pass" placeholder="Пароль" type="password")
+
+		.login__form-container--checks
+			input(type="checkbox" name="is_human").login__checkbox.login__is-human#is_human
+			label(for="is_human").login-form__label Я человек
+
+			p.login-form__question Вы точно не робот?
+
+			.login__group
+				input#yes_js_man_sure.input.input_radio(name='js_man_sure', type='radio', value='yes')
+				label.input__radio-label(for='yes_js_man_sure') Да
+				input#no_js_man_sure.input.input_radio(name='js_man_sure', type='radio', value='no')
+				label.input__radio-label(for='no_js_man_sure') Не уверен
+	-
+		var footer_menu = [
+			{ style: 'width: 50%', class: 'esc', item: 'На главную', link: '#'},
+			{ style: 'width: 50%', class: 'enter', item: 'Войти', link: '#'}
+		]
+	nav.welcome-footer
+		ul.welcome-menu
+			each item in footer_menu
+				li.welcome-menu__item(class=`${item.class}`, style=`${item.style}`)
+					a(href=`${item.link}`).welcome-menu__link #{item.item}

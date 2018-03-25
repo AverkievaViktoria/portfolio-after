@@ -1,0 +1,24 @@
+﻿include ../components/_socials
+
+.flip-card__front.user.hero__user
+	.user__pic
+		img(src="./assets/img/user.jpg", alt="").user__pic-img
+	.welcome-user__description
+		.welcome-user__name Виктория Аверкиева
+		.welcome-user__desc Личный сайт веб разработчика
+
+	
+	.welcome-socials__container
+		+social('social_white')
+
+	- 
+		var footer_menu = [ 
+			{ style: 'width: 40%', item: 'Мои работы', link: './works.html'}, 
+			{ style: 'width: 35%', item: 'Обо мне', link: './about.html'}, 
+			{ style: 'width: 25%', item: 'Блог', link: './blog.html'}
+		]
+	nav.welcome-footer
+		ul.welcome-menu
+			each item in footer_menu
+				li.welcome-menu__item(style=`${item.style}`)
+					a(href=`${item.link}`).welcome-menu__link #{item.item}

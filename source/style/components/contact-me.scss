@@ -1,0 +1,57 @@
+﻿.contact-me__form {
+  background-color: yellow; 
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  //@include centered();
+  text-align: center;
+  background: linear-gradient(to right, rgba(255,255,255,.05), rgba(255,255,255,.1));
+  opacity: 0.5;
+}
+
+.contact-me__title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.contact-me__group {
+  margin: 10px 20px;
+}
+  .contact-me__input {
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+    color: rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.07);
+  }
+
+  .contact-me__input_text {
+    width: 100%;
+    padding: 0px 10px;
+    height: 130px;
+    font-size: 16px;
+    text-align: left;
+    color: rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.07);
+  }
+
+.contact-me__button {
+  float: left;
+  width: 50%;
+  height: 45px;
+  background-color: transparent;
+  border: none;
+  color: $white;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba($dark-blue, 0.8);
+  }  
+  &:active {
+    background-color: rgba($blue, 0.8);
+  }  
+}
+.contact-me__button_active {
+    background-color: rgba($blue, 0.8);  
+}

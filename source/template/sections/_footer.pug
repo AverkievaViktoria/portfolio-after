@@ -1,0 +1,35 @@
+include ../components/_menu
+include ../components/_socials
+include ../components/_contacts
+
+mixin footer(type)
+  include ../sections/_variables
+  - var copyright = "© Виктория Аверкиева | Создано с любовью в LoftSchool | 2017"
+  - var anotation = "Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool."
+  -
+    var contacts = [
+    {url: "#", text: 'skype'},
+    {url: "#", text: 'email'},
+    {url: "#", text: '+7 phone'},
+    {url: "#", text: 'г. Санкт-Петербург'}]
+
+  case type
+    when 'welcome'
+      footer.footer.footer__welcome
+        .footer__welcome_text.text-white #{copyright}
+    when 'bottom'
+      .footer__bottom
+        .footer__copyright #{copyright}    
+    default
+      footer.footer
+        .footer__top
+          .footer__col.footer__col_anotation
+            .footer__text #{anotation}
+          .footer__col.footer__col_links
+            .footer__menu
+              +menu(menu)
+            .footer__social
+              +social('social_gray')
+          .footer__col.footer__col_contacts
+            +contact(contacts)
+        

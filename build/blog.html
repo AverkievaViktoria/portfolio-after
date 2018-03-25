@@ -1,0 +1,232 @@
+
+<!--&nbsp; - как вставить?--><!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Виктория Аверкиева - Блог</title>
+    <meta name="author" content="Аверкиева В.В. | Выпускной проект продвинутого курса веб-разработки Loftschool">
+    <meta name="description" content="Виктория Аверкиева - Блог">
+    <meta name="keywords" content="">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noarhive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/app.js" defer></script><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="preloader">
+        <div class="preloader__spinner">
+          <div class="preloader__animation"></div>
+          <div class="preloader__percents">0%</div>
+        </div>
+      </div>
+      <nav class="menu-hamburger js-menu-hamburger">
+        <ul class="menu-hamburger__list">
+          <li class="menu-hamburger__item"> <a class="menu-hamburger__link" href="works.html">Мои работы</a></li>
+          <li class="menu-hamburger__item"> <a class="menu-hamburger__link" href="about.html">Обо мне</a></li>
+          <li class="menu-hamburger__item"> <a class="menu-hamburger__link" href="blog.html">Блог</a></li>
+          <li class="menu-hamburger__item"> <a class="menu-hamburger__link" href="index.html">Авторизация</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger-container">
+        <div class="hamburger hamburger--3dx js-hamburger">
+          <div class="hamburger-box js-hamburger__link">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="socials__container">
+        <ul class="socials__list">
+          <li class="socials__item"><a class="socials__link socials__link socials__link--vk" href="https://vk.com/id134335756" target="_blank">
+              <svg class="social__icon social_white">
+                <use xlink:href="./assets/img/sprite.svg#vk"></use>
+              </svg></a></li>
+          <li class="socials__item"><a class="socials__link socials__link socials__link--github" href="https://github.com/AverkievaViktoria" target="_blank">
+              <svg class="social__icon social_white">
+                <use xlink:href="./assets/img/sprite.svg#github"></use>
+              </svg></a></li>
+          <li class="socials__item"><a class="socials__link socials__link socials__link--in" href="https://www.linkedin.com" target="_blank">
+              <svg class="social__icon social_white">
+                <use xlink:href="./assets/img/sprite.svg#in"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+      <section class="section__blog hero">
+        <div class="hero__container scroll-parallax">
+          <div class="scroll-parallax__container">
+            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="./assets/img/header-fone.png"/></div>
+          </div>
+          <!--.scroll-parallax
+          .scroll-parallax__container
+            .scroll-parallax__layer
+              img(src="./assets/img/header-fone.png").scroll-parallax__image
+          
+          
+          
+          
+          -->
+          <div class="arrow hero__scroll-button scroll-parallax__arrow">
+            <svg class="arrow__pic">
+              <use xlink:href="./assets/img/sprite.svg#arrow-down"></use>
+            </svg>
+          </div>
+          <div class="hero__title scroll-parallax__hero"><img class="hero__title-pic" src="./assets/img/stars1.svg" alt="stars"/>
+            <div class="user hero__user">
+              <div class="hero__pic"><img class="user__pic-img" src="./assets/img/user.jpg" alt=""/></div>
+              <div class="user__description">
+                <div class="hero__name">Блог</div>
+                <div class="hero__desc">Статьи, которые я написала	</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="triangle triangle_fill_white about__left-triangle">
+          <svg class="triangle__svg" viewbox="0 0 1000 150" preserveAspectRatio="none">
+            <polygon points="0,0 0,150 1000,150"></polygon>
+          </svg>
+        </div>
+        <div class="triangle triangle_fill_white about__right-triangle">
+          <svg class="triangle__svg" viewbox="0 0 1000 150" preserveAspectRatio="none">
+            <polygon points="1000,0 1000,150 0,150"></polygon>
+          </svg>
+        </div>
+        <div class="blog-row">
+          <aside class="blog__menu-sidebar" id="js_menu_sidebar">
+            <ul class="menu-sidebar__list">
+              <li class="menu-sidebar__item"><a class="menu-sidebar__link" href="#art1" data-link="#sidebar__item-art1">Метод гибкого управления проектом</a></li>
+              <li class="menu-sidebar__item"><a class="menu-sidebar__link" href="#art2" data-link="#sidebar__item-art2">Любимые цитаты</a></li>
+              <li class="menu-sidebar__item"><a class="menu-sidebar__link" href="#art3" data-link="#sidebar__item-art3">Стек технологий для fullstack веб-разработчика</a></li>
+              <li class="menu-sidebar__item"><a class="menu-sidebar__link" href="#art4" data-link="#sidebar__item-art4"></a></li>
+            </ul>
+          </aside>
+          <div class="blog__content" id="js_scroll_blog">
+            <div class="blog__articles">
+              <div class="article" id="art1" data-link="#art1">
+                <div class="article__subtitle">Метод гибкого управления проектом Agile</div>
+                <div class="article__date">25 марта 2018</div>
+                <div class="article__text text-content">
+                  <div class="article__subsubtitle">4 идеи Agile</div>
+                  <p>Люди и взаимодействие важнее процессов и инструментов.</p>
+                  <p>Рабочее программное обеспечение важнее документации.</p>
+                  <p>Сотрудничество с клиентами важнее согласования условий контракта.</p>
+                  <p>Готовность внести изменения в приоритете, нежели придерживаться первоначального плана.</p>
+                  <div class="article__subsubtitle">12 принципов Agile</div>
+                  <p>Удовлетворенность клиентов за счет ранней и непрерывной поставки программного обеспечения. </p>
+                  <p>Клиенты более счастливы, когда они получают рабочее программное обеспечение через регулярные промежутки времени.</p>
+                  <p>Вносить изменения требований к продукту  на протяжении всего процесса разработки.</p>
+                  <p>Частая поставка рабочего программного обеспечения (каждый месяц, две недели, неделю и т.д.).</p>
+                  <p>Сотрудничество между заинтересованными сторонами (заказчиком и разработчиками) на протяжении всего проекта.</p>
+                  <p>Поддержка, доверие и мотивация вовлеченных людей. Мотивированные команды с большей вероятностью выполняют свою лучшую работу, чем сотрудники, недовольные условиями труда.</p>
+                  <p>Взаимодействие лицом к лицу. Коммуникация более успешна, когда команды разработчиков имеют возможность общаться напрямую.</p>
+                  <p>Рабочее программное обеспечение является основной мерой прогресса. Предоставление функционального программного обеспечения клиенту является конечным фактором, который измеряет прогресс.</p>
+                  <p>Поддержка постоянного темпа работы. Команды устанавливают повторяемую и поддерживаемую скорость работы, с которой они могут доставлять функционирующее программное обеспечение.</p>
+                  <p>Внимание к техническим деталям и дизайну. Правильные навыки и хороший дизайн позволяют команде поддерживать темп, постоянно совершенствовать продукт и работать над изменениями.</p>
+                  <p>Простота.</p>
+                  <p>Самоорганизующиеся команды поощряют отличную архитектуру, требования и проекты. Квалифицированные и мотивированные члены команды, которые обладают полномочиями принимать решения, регулярно общаются с другими членами команды и обмениваются идеями, которые обеспечат создание качественного продукта.</p>
+                  <p>Постоянная адаптация к изменяющимся условиям, что поможет сделать продукт более конкурентоспособным на рынке.</p>
+                  <div class="article__subsubtitle">Собственный опыт</div>
+                  <p>Работала по идеям и принципам Agile в конце 90х. Но мы тогда не знали, что это так красиво будет называться. ПО обновлялось раз в 3 дня, изменения вносились по ходу работы заказчика с ПО. Я была единственным программистом. Смотрела, как работают, предлагала автоматизировать процесс. Заказчик удивлялся: "а что так можно?". Можно всё, вопрос - что нужно из всего, что можно! Был азарт, двигались быстро. Все были счастливы)</p>
+                </div>
+              </div>
+              <div class="article" id="art2" data-link="#art2">
+                <div class="article__subtitle">Любимые цитаты</div>
+                <div class="article__date"> 25 марта 2018</div>
+                <div class="article__text text-content">
+                  <p>"Принимайте решения самостоятельно. Не готовьте по чужим рецептам." (c) </p>
+                  <p>"Обычно, сложными нам кажутся дела, которые до конца непонятны. Так сделайте их простыми и понятными. Любое большое задание или проект можно разбить на несколько простых пунктов, выполнение каждого из которых не представляет для вас проблему." (c) Здесь в формулировке пункта важно ответить на вопрос, какой будет первый шаг, что конкретно сделать - найти, позвонить, написать.</p>
+                  <p>"Ответственность - это способность откликаться на то, что жизнь предлагает или предоставляет вам прямо сейчас (responsibility = ability to respond)." (c)</p>
+                  <p>"Мы много работаем потому, что ума не хватает" (с)</p>
+                </div>
+              </div>
+              <div class="article" id="art3" data-link="#art3">
+                <div class="article__subtitle">Стек технологий для fullstack веб-разработчика</div>
+                <div class="article__date">22 ноября 2016</div>
+                <div class="article__text text-content">
+                  <p>терминал (conemu)</p>
+                  <p>редактор (sublime, vscode, atom, др) </p>
+                  <p>git</p>
+                  <p>node.js</p>
+                  <p>npm</p>
+                  <p>gulp, webpack</p>
+                  <p>html, pug</p>
+                  <p>css, scss, normalize, foundation</p>
+                  <p>svg</p>
+                  <p>ajax</p>
+                  <p>js</p>
+                  <p>jQuery</p>
+                  <p>Angular, React, Vue</p>
+                  <p>bootstrap</p>
+                  <p>BEM</p>
+                  <p>php</p>
+                  <p>адаптив</p>
+                  <p>БД</p>
+                  <p>photoshop (illustrator, corell)</p>
+                  <p>seo</p>
+                  <p>сервер и хостинг</p>
+                  <p>управление проектами</p>
+                  <p>управление собой</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__col footer__col_anotation">
+            <div class="footer__text">Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool.</div>
+          </div>
+          <div class="footer__col footer__col_links">
+            <div class="footer__menu">
+              <ul class="menu  undefined">
+                <li class="menu__item"><a class="menu__link" href="works.html" id="">Мои работы</a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="about.html" id="">Обо мне</a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="blog.html" id="">Блог</a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="index.html" id="">Авторизация</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__social">
+              <ul class="socials__list">
+                <li class="socials__item"><a class="socials__link socials__link socials__link--vk" href="https://vk.com/id134335756" target="_blank">
+                    <svg class="social__icon social_gray">
+                      <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link socials__link socials__link--github" href="https://github.com/AverkievaViktoria" target="_blank">
+                    <svg class="social__icon social_gray">
+                      <use xlink:href="./assets/img/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link socials__link socials__link--in" href="https://www.linkedin.com" target="_blank">
+                    <svg class="social__icon social_gray">
+                      <use xlink:href="./assets/img/sprite.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col footer__col_contacts">
+            <ul class="contact">
+              <li class="contact__item"><a class="contact__link" href="/#">skype</a></li>
+              <li class="contact__item"><a class="contact__link" href="/#">email</a></li>
+              <li class="contact__item"><a class="contact__link" href="/#">+7 phone</a></li>
+              <li class="contact__item"><a class="contact__link" href="/#">г. Санкт-Петербург</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div class="footer__bottom">
+        <div class="footer__copyright">© Виктория Аверкиева | Создано с любовью в LoftSchool | 2017    </div>
+      </div>
+    </div>
+  </body>
+</html>

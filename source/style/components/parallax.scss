@@ -1,0 +1,89 @@
+#parallax {
+  position: absolute;
+  top: 0;
+  left: 0;  
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: $blue;
+}
+
+.parallax__layer {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+}
+
+.parallax__mountains {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  //@include centered();  
+  height: calc(100vh + 1%);
+  bottom: -1%;
+  width: 102%;
+  left: -1%;
+}
+
+
+
+.scroll-parallax {
+  background: $blue;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  perspective: 100px;
+}
+
+.scroll-parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.scroll-parallax__image {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.scroll-parallax__arrow {
+  
+}
+.scroll-parallax__hero {
+  
+}
+
+.parallax__content {
+  //height: 2000px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  //background: $blue;
+  transform: translateZ(0);
+}
+
+$layers: 1;
+
+@for $layersNum from $layers through 1 {
+  .scroll-parallax__layer:nth-child(#{$layersNum}) {
+    $currentLayer: $layers - $layersNum;
+    $perspective: -$currentLayer * 500px;
+    $scale: $currentLayer * .5 + 1;
+
+    transform: translateZ($perspective) scale($scale);
+  }
+}

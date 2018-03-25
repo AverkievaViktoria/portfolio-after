@@ -1,0 +1,82 @@
+﻿extends ../_template
+
+include ../sections/_header
+include ../sections/_footer
+
+block variables
+  - var title = 'Виктория Аверкиева - Мои работы'
+  - var description = 'Виктория Аверкиева - Мои работы'
+  include ../sections/_variables
+block content
+  include ../sections/preloader
+  +header(false)
+
+  section.section-works
+    .section-works__triangles
+      .section-works__col
+        .triangle.triangle_fill_black.about__left-triangle
+          svg(viewbox="0 0 1000 150" preserveAspectRatio="none").triangle__svg
+            polygon(points="0,0 0,150 1000,150")
+      .section-works__col
+        .triangle.triangle_fill_black.about__left-triangle
+          svg(viewbox="0 0 1000 150" preserveAspectRatio="none").triangle__svg
+            polygon(points="1000,0 1000,150 0,150")
+      .section-works__title
+        .block-title.text-white Мои работы
+
+  section.slider
+    .slider__desc
+      .slider__desc-info
+        .slider__desc-title
+          .block-subtitle.block-subtitle_gray.js_slider-title Сайт школы онлайн образования
+           
+        .slider__desc-skills.js_slider-skills
+          | HTML, css, javascript
+        .slider__desc-button
+          .welcome-menu__item
+            a(href="#").welcome-menu__link.js_slider-link
+              i(aria-hidden="true").fa.fa-link.menu__icon 
+              | Посмотреть сайт
+
+    .slider__display
+      .slider__display-container
+        img(src="./assets/img/works.jpg" alt="").slider__display-pic
+    .slider__btns
+      a(href="#").slider__btn.slider__btn_left
+        .slider__arrow.slider__arrow_down
+          svg.slider__arrow-pic
+            use(xlink:href=`./assets/img/sprite.svg#arrow_down`)
+      a(href="#").slider__btn.slider__btn_right
+        .slider__arrow.slider__arrow_up
+          svg.slider__arrow-pic
+            use(xlink:href=`./assets/img/sprite.svg#arrow_down`)
+  
+  section.reviews.reviews__background
+    .reviews__title
+      .block-title.text-white Что обо мне говорят  
+
+    .reviews__content
+      .reviews__block
+        .reviews__photo
+          img(src="./assets/img/photo1.jpg", alt="").reviews__photo_Dmitriy
+          
+        .review__text.text-white Виктория проходила обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+        .review__author.text-white Ковальчук Дмитрий — основатель Loftschool
+      .reviews__block
+        .reviews__photo
+          img(src="./assets/img/photo2.jpg").author
+        .review__text.text-white Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!`
+        .review__author.text-white Сабанцев Владимир — преподаватель
+
+    include ../sections/contact-me  
+
+    .arrow-top
+      .arrow-box
+        a(href="#").arrow-box__link
+          svg.arrow-box__up
+            use(xlink:href=`./assets/img/sprite.svg#arrow_down`)
+
+    +footer()
+
+block footer
+  +footer('bottom')

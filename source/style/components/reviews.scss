@@ -1,0 +1,83 @@
+﻿.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.reviews__background {
+  background-image: url("../../assets/img/reviews-fone.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+  .reviews__title { 
+    padding: 50px 0;
+    width: 340px;
+    line-height: 1.1;
+  }
+  .reviews__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 70px; 
+    @include ipad() {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+    .reviews__block {
+      padding-top: 20px;
+      width: 380px;
+      text-align: center;
+    }
+      .reviews__photo {
+        border-radius: 50%;
+        width: 78px;
+        height: 78px;
+        overflow: hidden;
+        margin: 0 auto 20px;
+      }
+      .reviews__photo_Dmitriy {
+        max-width: 150%;
+        top: -25%;
+      }
+      
+.review__item {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: 25px;
+  max-width: 380px;
+  @include ipad() {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+  &:last-child {
+    @include ipad() {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.review__text {
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  color: #fff;
+}
+.review__author {
+  display: block;
+  margin: 0 auto;
+  width: 190px;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  color: #fff;
+}
+
+
+.arrow-top {
+  padding: 70px 0;
+}

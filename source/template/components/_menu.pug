@@ -1,0 +1,7 @@
+mixin menu(items, mod)
+  - mod = ' ' + mod || ''
+  ul(class="menu" + ' ' + mod)
+    each item in items
+      li.menu__item
+        - item.id = item.id || ''
+        a.menu__link(href="" + item.url id="" + item.id) #{item.text}

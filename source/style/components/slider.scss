@@ -1,0 +1,129 @@
+﻿.slider {
+  height: 100vh;
+  min-height: 650px;
+}
+.slider {
+  display: flex;
+  flex-flow: column wrap;
+
+  @include ipad() {
+    flex-wrap: nowrap;
+  }
+}
+
+  .slider__desc {
+    height: 100%;
+    display: flex;
+    width: 50%;
+    min-height: 300px;
+    background: #f2f0e8;
+
+    @include ipad() {
+      width: 100%;
+    }
+  }
+    .slider__desc-info {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+      .slider__desc-title {
+        width: 350px;
+        margin-bottom: 20px;
+      }
+      .slider__desc-skills {
+        color: $blue;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .slider__desc-button {
+        margin: auto;
+      }
+
+  .slider__display {
+    background: $beige;
+  }
+    .slider__display-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+      .slider__display-pic {
+        max-width: 100%;
+        display: block;
+        max-height: 100%;
+      }
+
+  .slider__btns {
+    min-height: 100px;
+    height: 100%;
+    display: flex;
+  }
+
+  .slider__btn {
+    min-height: 100%;
+    flex: 1;
+    &_left {
+      background: url('../../assets/img/works-down.png') center center no-repeat;
+      background-size: cover;
+    }
+    &_right {
+      background: url('../../assets/img/works-up.png') center center no-repeat;
+      background-size: cover;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+.slider__display {
+  flex: 4;
+  width: 50%;
+
+  @include ipad() {
+    width: 100%;
+    order: -1;
+  }
+}
+
+.slider__btns {
+  flex: 1;
+}
+
+
+
+.button-with-icon {
+  background-color: #004cd1;
+  border: 1px solid #004cd1;
+  color: #fff;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  padding: rem(14px) rem(27px);
+  transition: .3s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  &:hover {
+    background-color: #083c96;
+    border: 1px solid #083c96;
+  }
+}
+.button-with-icon__img {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+  margin-right: 9px;
+}

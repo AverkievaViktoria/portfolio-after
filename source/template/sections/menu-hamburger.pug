@@ -1,0 +1,5 @@
+nav.menu-hamburger.js-menu-hamburger
+  ul.menu-hamburger__list
+    each item in menu
+      li.menu-hamburger__item 
+        a(href=`${item.url}`).menu-hamburger__link #{item.text}

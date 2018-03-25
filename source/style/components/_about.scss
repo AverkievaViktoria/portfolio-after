@@ -1,0 +1,116 @@
+﻿.about__left-triangle, .about__right-triangle {
+  height: 1px;
+  float: left;
+  width: 50%;
+  position: relative;
+}
+.about__left-triangle {
+  fill: $white;
+  @include desktop {
+    fill: $beige;
+  }
+}
+.about__right-triangle {
+  fill: $beige;
+  @include desktop {
+    fill: $white;
+  }
+  @include ipad {
+    fill: $beige;
+  }
+}
+
+
+
+.about-row {
+  display: flex;
+  @include ipad {
+    flex-direction: column;
+  }
+}
+  .about__left, .about__right {
+    display: flex;
+    position: relative;
+    flex: 1;
+    @include ipad {
+      flex-direction: column;
+      background: $beige;
+    }
+  }
+  .about__left {
+    background: $white;
+    @include desktop {
+      flex-direction: column;
+      background: $beige;
+    }
+  }
+  .about__right {
+    background: $beige;
+    @include desktop {
+      background: $white;
+    }
+    @include ipad {
+      background: $white;
+    }
+  }
+
+    .about-container__skills{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      @include ipad {
+        background: $white;
+      }
+    }
+    .about__right-content {
+      @include ipad {
+        text-align: center;
+      }
+    }
+
+    .about-container {
+      flex: 1;
+      display: flex;
+
+      @include ipad {
+        flex-direction: column;
+        background: $beige;
+      }
+    }
+    .about-container__left {
+
+    }
+    .about-container__right {
+      flex-direction: column;
+    }
+
+
+
+
+.about__left-title {
+  position: relative;
+  float: left;
+  margin: -20px auto 0;
+  text-align: center;
+}
+.about__right-title {
+  margin: -5px auto 0;
+  width: 300px;
+}
+
+.about__left-content {
+  float: left;
+  position: relative;
+}
+
+.about-container {
+  padding: 20px;
+}
+
+.about-description__image {
+  padding-bottom: 25px;
+}
+.about-description__avatar {
+  width: 100%;
+}
+

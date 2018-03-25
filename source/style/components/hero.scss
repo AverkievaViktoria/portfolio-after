@@ -1,0 +1,92 @@
+﻿.section__blog {
+  position: relative;
+  height: 470px;
+  min-height: 470px;
+}
+
+.hero {
+  overflow: hidden;
+}
+
+.hero__bg {
+  display: block;
+  position: absolute;
+}
+
+.hero__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150%;
+  width: 150%;
+  @include centered();
+  overflow: hidden;
+  background-image: url("/assets/img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.hero__container {
+  position: relative;
+  height: 100%;
+}
+
+.hero__title {
+  right: 0;
+  left: 0;
+  @include centered(y);
+  margin-top: -35px;
+}
+
+.hero__title-pic {
+  width: 100%;
+  height: 270px;
+  opacity: 0.1;
+}
+
+
+.hero__scroll-button {
+  bottom: 100px;
+  @include centered(x);
+}
+
+.hero__scroll-button-blog {
+  bottom: 85px;
+  @include centered(x);
+}
+
+
+.hero__user {
+  @include centered();
+  text-align: center;
+}
+
+.hero__pic {
+  display: block;
+  width: 147px;
+  height: 147px;
+  border-radius: 50%;
+  //margin-bottom: 25px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.hero__name {
+  margin-bottom: 10px;
+  font-size: 63px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero__desc {
+  font-weight: 100;
+  color: #ffffff;
+}
