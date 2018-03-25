@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Виктория Аверкиева - Мои работы</title>
-    <meta name="author" content="Аверкиева В.В. | Выпускной проект продвинутого курса веб-разработки Loftschool">
+    <meta name="author" content="Аверкиева В.В., Выпускной проект продвинутого курса веб-разработки Loftschool">
     <meta name="description" content="Виктория Аверкиева - Мои работы">
     <meta name="keywords" content="">
     <meta name="robots" content="noindex, nofollow">
@@ -150,21 +150,21 @@
             <div class="review__author text-white">Сабанцев Владимир — преподаватель</div>
           </div>
         </div>
-        <div class="contact-me__form">
+        <form class="contact-me__form" id="contact_me">
+          <div class="contact-me__status"></div>
           <div class="contact-me__title"> 
             <div class="block-subtitle block-subtitle_white">Связаться со мной</div>
           </div>
           <div class="contact-me__group">
-            <div class="contact-me__input">Ваше имя </div>
-            <!-- (placeholder="Ваше имя")-->
-            <div class="contact-me__input">Ваш email</div>
-            <div class="contact-me__input_text">Ваше сообщение</div>
+            <input class="contact-me__input contact-me__input_name" name="name" placeholder="Ваше имя" type="text">
+            <input class="contact-me__input contact-me__input_email" name="email" placeholder="Ваш Email" type="email">
+            <textarea class="contact-me__input contact-me__input_msg" name="msg" placeholder="Ваше сообщение"></textarea>
           </div>
           <div class="contact-me__footer">
-            <button class="contact-me__submit contact-me__button contact-me__button_active" type="submit" value="submit">Отправить</button>
-            <button class="contact-me__reset contact-me__button" type="reset" value="reset">Очистить  </button>
+            <button class="contact-me__button contact-me__submit contact-me__button_active" type="submit" value="submit">Отправить</button>
+            <button class="contact-me__button contact-me__reset" type="reset" value="reset">Очистить    </button>
           </div>
-        </div>
+        </form>
         <div class="arrow-top">
           <div class="arrow-box"><a class="arrow-box__link" href="#">
               <svg class="arrow-box__up">

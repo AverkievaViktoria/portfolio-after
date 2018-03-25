@@ -1,6 +1,0 @@
-mixin menu-aside(articles)
-	.menu-aside
-		ul.menu-aside__block
-			each item in articles
-				li.menu-aside__item.menu-aside__item_active
-					a(href=`#${item.link}`).menu-aside__link #{item.item}

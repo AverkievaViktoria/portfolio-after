@@ -7,36 +7,22 @@ block variables
   - var title = 'Виктория Аверкиева - Блог'
   - var description = 'Виктория Аверкиева - Блог'
   include ../sections/_variables
-  //&nbsp; - как вставить?
-  -
-    var articles = [
-      { item: 'Метод гибкого управления проектом', link: 'art1'},
-      { item: 'Любимые цитаты', link: 'art2'},
-      { item: 'Стек технологий для fullstack веб-разработчика', link: 'art3'},
-      { item: '', link: 'art4'}]
+  //-&nbsp; - как вставить?
+  
 
 block content
   include ../sections/preloader
   +header(true)
 
   section.blog
-    .triangle.triangle_fill_white.about__left-triangle
-      svg(viewbox="0 0 1000 150" preserveAspectRatio="none").triangle__svg
-        polygon(points="0,0 0,150 1000,150")
-    .triangle.triangle_fill_white.about__right-triangle
-      svg(viewbox="0 0 1000 150" preserveAspectRatio="none").triangle__svg
-        polygon(points="1000,0 1000,150 0,150")
+    include ../components/blog/triangles
+
     .blog-row
       aside.blog__menu-sidebar#js_menu_sidebar
-        ul.menu-sidebar__list
-          each item in articles
-            li.menu-sidebar__item
-              a(href=`#${item.link}` data-link=`#sidebar__item-${item.link}`).menu-sidebar__link #{item.item}
-
+        include ../components/blog/menu-sidebar
       .blog__content#js_scroll_blog
         include ../components/blog/articles
         
-
 block footer
   +footer()
   +footer('bottom')

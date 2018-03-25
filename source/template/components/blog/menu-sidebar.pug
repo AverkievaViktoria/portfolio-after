@@ -1,0 +1,10 @@
+-
+    var articles = [
+      { item: 'Agile - метод гибкого управления проектом', link: 'art1'},
+      { item: 'Любимые цитаты', link: 'art2'},
+      { item: 'Стек технологий для fullstack веб-разработчика', link: 'art3'},
+      { item: '', link: 'art4'}]
+ul.menu-sidebar__list
+  each item in articles
+    li.menu-sidebar__item
+      a(href=`#${item.link}` data-link=`#sidebar__item-${item.link}`).menu-sidebar__link #{item.item}
